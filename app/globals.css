@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  :root {
+    /* ptbestsitesdeapostas.com — strict editorial palette */
+    --background: 210 14% 97%;
+    --foreground: 220 18% 14%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 18% 14%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 18% 14%;
+    --primary: 152 55% 20%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 210 12% 93%;
+    --secondary-foreground: 220 18% 14%;
+    --muted: 210 12% 93%;
+    --muted-foreground: 220 10% 42%;
+    --accent: 0 68% 40%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 68% 40%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 12% 87%;
+    --input: 210 12% 87%;
+    --ring: 152 55% 20%;
+    --chart-1: 152 55% 20%;
+    --chart-2: 0 68% 40%;
+    --chart-3: 220 18% 14%;
+    --chart-4: 210 12% 55%;
+    --chart-5: 210 12% 75%;
+    --radius: 0.375rem;
+    --sidebar-background: 210 14% 97%;
+    --sidebar-foreground: 220 18% 14%;
+    --sidebar-primary: 152 55% 20%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 210 12% 93%;
+    --sidebar-accent-foreground: 220 18% 14%;
+    --sidebar-border: 210 12% 87%;
+    --sidebar-ring: 152 55% 20%;
+
+    /* Brand Color Tokens */
+    --portugal-green: 152 55% 20%;
+    --portugal-red: 0 68% 40%;
+    --portugal-dark-green: 152 60% 15%;
+    --portugal-light-green: 152 40% 32%;
+    --portugal-dark-red: 0 72% 34%;
+    --portugal-gold: 38 80% 44%;
+    --site-header: 220 22% 12%;
+  }
+  .dark {
+    --background: 220 18% 8%;
+    --foreground: 210 14% 94%;
+    --card: 220 18% 11%;
+    --card-foreground: 210 14% 94%;
+    --popover: 220 18% 11%;
+    --popover-foreground: 210 14% 94%;
+    --primary: 152 50% 28%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 220 14% 18%;
+    --secondary-foreground: 210 14% 94%;
+    --muted: 220 14% 18%;
+    --muted-foreground: 210 12% 60%;
+    --accent: 0 65% 44%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 65% 44%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 14% 22%;
+    --input: 220 14% 22%;
+    --ring: 152 50% 28%;
+    --chart-1: 152 50% 28%;
+    --chart-2: 0 65% 44%;
+    --chart-3: 210 14% 60%;
+    --chart-4: 210 12% 45%;
+    --chart-5: 210 12% 30%;
+    --sidebar-background: 220 18% 8%;
+    --sidebar-foreground: 210 14% 94%;
+    --sidebar-primary: 152 50% 28%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 220 14% 18%;
+    --sidebar-accent-foreground: 210 14% 94%;
+    --sidebar-border: 220 14% 22%;
+    --sidebar-ring: 152 50% 28%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  main {
+    @apply text-foreground;
+  }
+}
+
+/* Brand Color Utilities */
+.bg-portugal-green { background-color: hsl(var(--portugal-green)); }
+.bg-portugal-red { background-color: hsl(var(--portugal-red)); }
+.bg-portugal-dark-green { background-color: hsl(var(--portugal-dark-green)); }
+.bg-portugal-light-green { background-color: hsl(var(--portugal-light-green)); }
+.bg-portugal-dark-red { background-color: hsl(var(--portugal-dark-red)); }
+.bg-portugal-gold { background-color: hsl(var(--portugal-gold)); }
+.bg-site-header { background-color: hsl(var(--site-header)); }
+
+.text-portugal-green { color: hsl(var(--portugal-green)); }
+.text-portugal-red { color: hsl(var(--portugal-red)); }
+.text-portugal-dark-green { color: hsl(var(--portugal-dark-green)); }
+.text-portugal-light-green { color: hsl(var(--portugal-light-green)); }
+.text-portugal-dark-red { color: hsl(var(--portugal-dark-red)); }
+.text-portugal-gold { color: hsl(var(--portugal-gold)); }
+
+.border-portugal-green { border-color: hsl(var(--portugal-green)); }
+.border-portugal-red { border-color: hsl(var(--portugal-red)); }
+
+.hover\:bg-portugal-green:hover { background-color: hsl(var(--portugal-green)); }
+.hover\:bg-portugal-red:hover { background-color: hsl(var(--portugal-red)); }
+.hover\:bg-portugal-dark-green:hover { background-color: hsl(var(--portugal-dark-green)); }
+.hover\:bg-portugal-dark-red:hover { background-color: hsl(var(--portugal-dark-red)); }
+.hover\:text-portugal-green:hover { color: hsl(var(--portugal-green)); }
+.hover\:text-portugal-red:hover { color: hsl(var(--portugal-red)); }
+.hover\:text-portugal-light-green:hover { color: hsl(var(--portugal-light-green)); }

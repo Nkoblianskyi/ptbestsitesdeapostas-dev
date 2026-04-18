@@ -68,7 +68,7 @@ export function Footer() {
                 </Link>
               ))}
             </div>
-            <Link href="https://www.jogoresponsavel.pt/" target="_blank" rel="noopener noreferrer" className="mt-4 inline-flex items-center text-xs text-gray-400 hover:text-gray-200 transition-colors">
+            <Link href="https://www.jogoresponsavel.pt/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center border border-white/10 rounded-sm p-2.5 hover:bg-white/10 transition-colors">
               <Image src="/jogo-responsavel-new.png" alt="SRIJ" width={100} height={100} />
             </Link>
           </div>

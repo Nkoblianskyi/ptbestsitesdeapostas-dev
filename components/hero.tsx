@@ -29,7 +29,7 @@ export function Hero() {
 
           <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
             <div className="flex items-center gap-2">
-              <Image src="/srij-new.svg" alt="SRIJ" width={16} height={16} className="flex-shrink-0" />
+              <Image src="/srij-new.svg" alt="SRIJ" width={24} height={24} className="flex-shrink-0" />
               <span className="text-sm text-gray-300">Licença</span>
             </div>
             <div className="flex items-center gap-2">

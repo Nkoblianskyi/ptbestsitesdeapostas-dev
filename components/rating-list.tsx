@@ -154,6 +154,15 @@ export function RatingList({ sites }: RatingListProps) {
                       </div>
                     </div>
                   </div>
+
+                  {/* Disclaimer */}
+                  <div className="border-t border-white/10 px-4 py-1.5 flex items-center justify-center gap-2">
+                    <span className="text-[10px] text-gray-500 font-medium">18+</span>
+                    <span className="text-gray-600 text-[10px]">|</span>
+                    <span className="text-[10px] text-gray-500">Jogo Responsável</span>
+                    <span className="text-gray-600 text-[10px]">|</span>
+                    <span className="text-[10px] text-gray-500">SRIJ</span>
+                  </div>
                 </div>
               </a>
             )

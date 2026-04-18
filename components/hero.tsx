@@ -1,8 +1,9 @@
 "use client"
 
 import { useState } from "react"
-import { ShieldCheck, BadgeCheck, AlertCircle, TrendingUp } from "lucide-react"
+import { BadgeCheck, AlertCircle, TrendingUp } from "lucide-react"
 import { AdvertiserInfoModal } from "./advertiser-info-modal"
+import Image from "next/image"
 
 export function Hero() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -28,8 +29,8 @@ export function Hero() {
 
           <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
             <div className="flex items-center gap-2">
-              <ShieldCheck className="h-4 w-4 text-portugal-green flex-shrink-0" />
-              <span className="text-sm text-gray-300">Licença SRIJ</span>
+              <Image src="/srij-new.svg" alt="SRIJ" width={16} height={16} className="flex-shrink-0" />
+              <span className="text-sm text-gray-300">Licença</span>
             </div>
             <div className="flex items-center gap-2">
               <BadgeCheck className="h-4 w-4 text-portugal-green flex-shrink-0" />
